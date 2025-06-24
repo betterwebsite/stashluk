@@ -3,72 +3,266 @@
 <!-- ============================================ -->
 
 <header id="cs-navigation">
-    <div class="cs-container">
-        <!--Nav Logo-->
-        <a href="/" class="cs-logo" aria-label="back to home">
-            <img src="/assets/svgs/logo-black.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
-        </a>
-        <!--Navigation List-->
-        <nav class="cs-nav" role="navigation">
-            <!--Mobile Nav Toggle-->
-            <button class="cs-toggle" aria-label="mobile menu toggle">
-                <div class="cs-box" aria-hidden="true">
-                    <span class="cs-line cs-line1" aria-hidden="true"></span>
-                    <span class="cs-line cs-line2" aria-hidden="true"></span>
-                    <span class="cs-line cs-line3" aria-hidden="true"></span>
-                </div>
-            </button>
-            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-            <div class="cs-ul-wrapper">
-                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-                    <li class="cs-li">
-                        <a href="/" class="cs-li-link {% if page.url == "/" %} cs-active {% endif %}">
-                            Home
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="/about/" class="cs-li-link {% if page.url == "/about/" %} cs-active {% endif %}">
-                            About
-                        </a>
-                    </li>
-                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-                    <li class="cs-li cs-dropdown">
-                        <span class="cs-li-link {% if page.url == "/project-one/" or page.url == "/project-two/" %} cs-active {% endif %}">
-                            Projects
-                            <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                        </span>
-                        <ul class="cs-drop-ul">
-                            <li class="cs-drop-li">
-                                <a href="/project-one/" class="cs-li-link cs-drop-link">Project One</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="/project-two/" class="cs-li-link cs-drop-link">Project Two</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="cs-li">
-                        <a href="/reviews/" class="cs-li-link {% if page.url == "/reviews/" %} cs-active {% endif %}">
-                            Reviews
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="/blog/" class="cs-li-link {% if page.url == "/blog/" %} cs-active {% endif %}">
-                            Blog
-                        </a>
-                    </li>
-                    <li class="cs-li cs-hide-on-desktop">
-                        <a href="/contact/" class="cs-li-link {% if page.url == "/contact/" %} cs-active {% endif %}">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
+    <!--Nav Logo-->
+    <a href="" class="cs-logo cs-desktop" aria-label="back to home">
+        <div class="cs-logo-wrapper">
+            <!--Default Logo-->
+            <img class="cs-default" src="/assets/images/logo.svg" alt="logo" width="210" height="29" aria-hidden="true"
+                decoding="async" style="width: 90%;">
+            <!--Dark Mode Logo-->
+            <img class="cs-dark" src="/assets/images/logo.svg" alt="logo" width="210" height="29" aria-hidden="true"
+                decoding="async" style="width: 90%;">
+        </div>
+    </a>
+    <div class="cs-middle">
+        <!--Top Bar-->
+        <div class="cs-top-bar">
+            <div class="cs-top-social">
+                <a href="https://www.facebook.com/stashluknj/" class="cs-social-link">
+                    <img class="cs-social-icon" src="/assets/svgs/facebook.svg" alt="logo" width="12" height="12"
+                        aria-hidden="true" decoding="async">
+                </a>
+                <a href="https://x.com/stashluknj" class="cs-social-link">
+                    <img class="cs-social-icon" src="/assets/svgs/twitter.svg" alt="logo" width="12" height="12"
+                        aria-hidden="true" decoding="async">
+                </a>
+                <a href="https://www.instagram.com/stashluk_inc/" class="cs-social-link">
+                    <img class="cs-social-icon" src="/assets/svgs/instagram.svg" alt="logo" width="12" height="12"
+                        aria-hidden="true" decoding="async">
+                </a>
+                <!-- <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a> -->
             </div>
-        </nav>
-        <a href="/contact/" class="cs-button-solid cs-nav-button">Contact Us</a>
-        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-        <button id="dark-mode-toggle" aria-label="dark mode toggle">
-            <img class="cs-moon" aria-hidden="true" src="/assets/svgs/moon.svg" decoding="async" alt="moon" width="15" height="15">
-            <img class="cs-sun" aria-hidden="true" src="/assets/svgs/sun.svg" decoding="async" alt="sun" width="15" height="15">
-        </button>
+            <ul class="cs-location">
+                <li class="cs-item cs-remove">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-pin1.svg"
+                        alt="icon" width="20" height="20" aria-hidden="true" decoding="async">
+                    31 Chatham Rd - Summit, NJ 07901
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-clock1.svg"
+                        alt="icon" width="20" height="20" aria-hidden="true" decoding="async">
+                    24/7 Service
+                </li>
+            </ul>
+        </div>
+        <div class="cs-bottom-bar">
+            <a href="" class="cs-logo cs-mobile" aria-label="back to home">
+                <div class="cs-logo-wrapper">
+                    <!--Default Logo-->
+                    <img class="cs-default" src="/assets/images/logo.svg" alt="logo" width="210" height="29"
+                        aria-hidden="true" decoding="async">
+                    <!--Dark Mode Logo-->
+                    <img class="cs-dark" src="/assets/images/logo.svg" alt="logo" width="210" height="29"
+                        aria-hidden="true" decoding="async">
+                </div>
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                        <!-- <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Services
+                                <img class="cs-drop-icon"
+                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/arrow-dwon2.svg"
+                                    alt="dropdown icon" width="24" height="24" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">New Construction</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Home Remodels</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                        <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link cs-dropdown-toggle">
+                                Services
+                                <img class="cs-drop-icon" src="/assets/svgs/arrow-down-small.svg" alt="dropdown icon"
+                                    width="15" height="15" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li cs-drop3-main">
+                                    <span class="cs-li-link cs-drop-link ">
+                                        Heating
+                                        <img class="cs-drop-icon" src="/assets/svgs/arrow-down-small.svg"
+                                            alt="dropdown icon" width="15" height="15" decoding="async"
+                                            aria-hidden="true">
+                                    </span>
+                                    <!--Tertiary-->
+                                    <ul class="cs-drop3">
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">Heating
+                                                Installation</a>
+                                        </li>
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">Heating Repairs</a>
+                                        </li>
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">Furnaces</a>
+                                        </li>
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">Heat Pumps</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="cs-drop-li cs-drop3-main">
+                                    <span class="cs-li-link cs-drop-link">
+                                        Air Conditioning
+                                        <img class="cs-drop-icon" src="/assets/svgs/arrow-down-small.svg"
+                                            alt="dropdown icon" width="15" height="15" decoding="async"
+                                            aria-hidden="true">
+                                    </span>
+                                    <!--Tertiary-->
+                                    <ul class="cs-drop3">
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">AC Repair</a>
+                                        </li>
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">AC Installation</a>
+                                        </li>
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">AC Tune-Ups</a>
+                                        </li>
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">Ductless Mini-Splits</a>
+                                        </li>
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">Heat Pumps</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="cs-drop-li cs-drop3-main">
+                                    <span class="cs-li-link cs-drop-link">
+                                        Plumbing
+                                        <img class="cs-drop-icon" src="/assets/svgs/arrow-down-small.svg"
+                                            alt="dropdown icon" width="15" height="15" decoding="async"
+                                            aria-hidden="true">
+                                    </span>
+                                    <!--Tertiary-->
+                                    <ul class="cs-drop3">
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">Plumbing Repairs</a>
+                                        </li>
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">Leak Repairs</a>
+                                        </li>
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">Water Heater Repair</a>
+                                        </li>
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">Water Heater Replacement</a>
+                                        </li>
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">Sump Pumps</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="cs-drop-li cs-drop3-main">
+                                    <span class="cs-li-link cs-drop-link">
+                                        Other Services
+                                        <img class="cs-drop-icon" src="/assets/svgs/arrow-down-small.svg"
+                                            alt="dropdown icon" width="15" height="15" decoding="async"
+                                            aria-hidden="true">
+                                    </span>
+                                    <!--Tertiary-->
+                                    <ul class="cs-drop3">
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">Indoor Air Quality</a>
+                                        </li>
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">Thermostats</a>
+                                        </li>
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">Generators</a>
+                                        </li>
+                                        <li class="cs-drop-li3">
+                                            <a href="" class="cs-li-link cs-drop-link cs-drop-link3">Safety Checks And Plans</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Areas We Serve
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Specials
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a class="cs-nav-button cs-tablet" href="tel:9082776200" aria-label="call us now">
+                <picture class="cs-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-phone1.svg" alt="icon"
+                        width="24" height="24">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-header">Contact Us Now 24/7</span>
+                    <span class="cs-link-content">(908) 277-6200</span>
+                </div>
+            </a>
+            <a href="/contact" class="cs-button-border">
+                Schedule a Service
+                <img class="cs-icon" loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/up-right-arrow.svg" alt="icon"
+                    width="20" height="20">
+            </a>
+            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+            <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"
+                    style="enable-background:new 0 0 480 480" xml:space="preserve">
+                    <path
+                        d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z" />
+                </svg>
+                <img class="cs-sun" aria-hidden="true"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon"
+                    width="15" height="15">
+            </button>
+        </div>
+    </div>
+    <div class="cs-contact-wrapper">
+        <a class="cs-desktop-button" href="tel:9082776200">
+            <picture class="cs-wrapper">
+                <img class="cs-button-icon" loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-phone1.svg" alt="icon"
+                    width="24" height="24">
+            </picture>
+            <div class="cs-info">
+                <span class="cs-header">Contact Us Now 24/7</span>
+                <span class="cs-link-content">(908) 277-6200</span>
+            </div>
+        </a>
     </div>
 </header>
