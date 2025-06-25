@@ -13,7 +13,7 @@ module.exports = {
         mapLink: "https://maps.app.goo.gl/XjS1w5ZBvwPru4kt8",
     },
     socials: {
-        facebook: "https://www.facebook.com/",
+        facebook: "https://www.facebook.com/stashluknj/",
         instagram: "https://www.instagram.com/stashluk_inc/",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
