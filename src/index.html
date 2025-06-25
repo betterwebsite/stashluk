@@ -28,27 +28,111 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 {% endblock %}
 
 {% block body %}
+
+
+
+
+
 <!-- ============================================ -->
-<!--                     Hero                     -->
+<!--                    Hero                      -->
 <!-- ============================================ -->
 
-<section id="hero-1946">
+<section id="hero-1033">
     <div class="cs-container">
         <div class="cs-content">
             <h2 class="cs-title">Proudly Serving Summit, NJ For Over 75 Years</h2>
-            <div class="cs-flex">
-                <p class="cs-text">Plumbers, electricians, and HVAC specialists dedicated to quality service right here in Summit, NJ. Whether you need a quick repair or a full installation, our team is here to help.</p>
-                <a href="/contact" class="cs-button-solid">Schedule a Service</a>
-                <img class="cs-plumber-boy" decoding="async" src="/assets/images/plumber_boy2.png" alt="construction site" width="510" height="510">
-            </div>
+            <p class="cs-text">
+                Plumbers, electricians, and HVAC specialists dedicated to quality service right here in Summit, NJ. Whether you need a quick repair or a full installation, our team is here to help.
+            </p>
+            <a href="" class="cs-button-solid">Schedule a Service</a>
         </div>
+        <div class="cs-image-group" style="overflow: hidden;">
+            <!-- <span class="cs-tagline"><img class="cs-graphic" aria-hidden="true" decoding="async" src="/assets/images/slashes.svg" alt="stripes graphic" width="1290" height="684" style="height: 54px;position: absolute;left: 0%;top: -0.5%;background-color: #d42c24;"></span> -->
+            <span class="cs-tagline">Limited Special</span>
+            <h2 class="cs-h2">10% OFF</h2>
+            <hr style="width: 20%;background-color: #1d5c8b;border-color: #1d5c8b;color: #1d5c8b;margin-bottom:1rem;">
+            <p class="cs-desc">
+                Any Service Call for <strong>New Customers</strong>
+            </p>
+            <a href="" class="cs-button-solid" style="margin-bottom: 4rem;">Redeem Offer</a>
+        </div>
+        <div class="cs-image-group">
+            <span class="cs-tagline">Limited Special</span>
+            <h2 class="cs-h2">$100 OFF</h2>
+            <hr style="width: 20%;background-color: #1d5c8b;border-color: #1d5c8b;color: #1d5c8b;margin-bottom:1rem;">
+            <p class="cs-desc">
+                On any <strong>routine</strong> services or maintenance plans
+            </p>
+            <a href="" class="cs-button-solid" style="margin-bottom: 4rem;">Redeem Offer</a>
+        </div>
+    </div>
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/plumber.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/plumber.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/plumber.jpg" alt="chef" width="1290" height="1029">
+    </picture>
+</section>
+                              
+
+    <!-- ============================================ -->
+    <!--                   Services                   -->
+    <!-- ============================================ -->
+<!-- 
+    <section id="h-services-143">
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-icon">
+                    <img loading="lazy" decoding="async" src="/assets/svgs/s1.svg" alt="icon" width="52" height="52" aria-hidden="true">
+                </picture>
+                <h2 class="cs-title">Full Kitchen Remodel</h2>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon">
+                    <img loading="lazy" decoding="async" src="/assets/svgs/s2.svg" alt="icon" width="52" height="52" aria-hidden="true">
+                </picture>
+                <h2 class="cs-title">Exterior Repairs</h2>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon">
+                    <img loading="lazy" decoding="async" src="/assets/svgs/s3.svg" alt="icon" width="52" height="52" aria-hidden="true">
+                </picture>
+                <h2 class="cs-title">Utility Maintenance</h2>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon">
+                    <img loading="lazy" decoding="async" src="/assets/svgs/s4.svg" alt="icon" width="52" height="52" aria-hidden="true">
+                </picture>
+                <h2 class="cs-title">Design Consultation</h2>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </li>
+        </ul>
+    </section> -->
+
+
+
+<!-- ============================================ -->
+<!--                     Hero                     -->
+<!-- ============================================ -->
+<!-- 
+<section id="hero-1946">
+    <div class="cs-container">
 
         <ul class="cs-card-group">
             <li class="cs-item">
                 <picture class="cs-icon-picture">
                     <img class="cs-icon" src="/assets/svgs/leak.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
                 </picture>
-                <!-- Text Grouped For Flexbox-->
                 <div class="cs-text-group">
                     <h3 class="cs-h3">24/7 Emergency Plumbing</h3>
                     <p class="cs-item-text">Fast and reliable plumbing services available around the clock.</p>
@@ -58,7 +142,6 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 <picture class="cs-icon-picture">
                     <img class="cs-icon" src="/assets/svgs/air-conditioner.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
                 </picture>
-                <!-- Text Grouped For Flexbox-->
                 <div class="cs-text-group">
                     <h3 class="cs-h3">Air Conditioner Service</h3>
                     <p class="cs-item-text">Expert HVAC technicians ready to keep you cool.</p>
@@ -68,7 +151,6 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 <picture class="cs-icon-picture">
                     <img class="cs-icon" src="/assets/svgs/shield.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
                 </picture>
-                <!-- Text Grouped For Flexbox-->
                 <div class="cs-text-group">
                     <h3 class="cs-h3">Safety Inspections</h3>
                     <p class="cs-item-text">Annual inspection services to ensure your systems are running smoothly.</p>
@@ -78,22 +160,16 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 <picture class="cs-icon-picture">
                     <img class="cs-icon" src="/assets/svgs/wrench.svg" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
                 </picture>
-                <!-- Text Grouped For Flexbox-->
                 <div class="cs-text-group">
                     <h3 class="cs-h3">Other Services</h3>
                     <p class="cs-item-text">Check out a variety of additional services we provide to meet your needs.</p>
                 </div>
             </li>
         </ul>
-        <!-- <picture class="cs-picture" style="padding-top: 3rem;">
-            <source media="(min-width: 601px)" srcset="/assets/images/us2.jpg">
-            <source media="(max-width: 600px)" srcset="/assets/images/us2.jpg">
-            <img decoding="async" src="/assets/images/us2.jpg" alt="construction site" width="1280" height="510">
-        </picture> -->
         
     </div>
 </section>
-                            
+                             -->
 <!-- ============================================ -->
 <!--                    Hero                      -->
 <!-- ============================================ -->
@@ -115,15 +191,85 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             </div>
             <!--To make your own background crops of people use https://www.remove.bg/-->
             <picture class="cs-picture">
-                <source media="(max-width: 600px)" srcset="/assets/images/van_moving.png">
-                <source media="(min-width: 601px)" srcset="/assets/images/van_moving.png">
-                <img aria-hidden="true" decoding="async" src="/assets/images/van_moving.png" alt="construction worker" width="581" height="662">
+                <source media="(max-width: 600px)" srcset="/assets/images/real_van.png">
+                <source media="(min-width: 601px)" srcset="/assets/images/real_van.png">
+                <img aria-hidden="true" decoding="async" src="/assets/images/real_van.png" alt="construction worker" width="581" height="662">
             </picture>
         </div>
     </div>
 </section>
          
+                 
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
 
+<section id="services-2129">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Our Services</h2>
+            <p class="cs-text">
+                    Click on any service to see more information or call us at <a href="tel:9082776200">(908) 277-6200</a> to schedule an appointment.
+                </p>
+        </div>                  
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="/assets/images/plumber.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="/assets/images/plumber.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/plumber.jpg" alt="wedding photography" width="305" height="340">
+                    </picture>
+                    <h3 class="cs-h3">24/7 Emergency Plumbing</h3>
+                    <p class="cs-item-text">Fast and reliable plumbing services available around the clock.</p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="/assets/images/ac.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="/assets/images/ac.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/ac.jpg" alt="wedding photography" width="305" height="340">
+                    </picture>
+                    <h3 class="cs-h3">Air Conditioner Service</h3>
+                    <p class="cs-item-text">Expert HVAC technicians ready to keep you cool.</p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="/assets/images/inspection.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="/assets/images/inspection.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/inspection.jpg" alt="wedding photography" width="305" height="340">
+                    </picture>
+                    <h3 class="cs-h3">Safety Inspections</h3>
+                    <p class="cs-item-text">Annual inspection services to ensure your systems are running smoothly.</p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="/assets/images/us2.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="/assets/images/us2.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/us2.jpg" alt="wedding photography" width="305" height="340">
+                    </picture>
+                    <h3 class="cs-h3">Other Services</h3>
+                    <p class="cs-item-text">Check out a variety of additional services we provide to meet your needs.</p>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</section>
+                 
 <!-- ============================================ -->
 <!--              Side By Side Reverse            -->
 <!-- ============================================ -->
@@ -174,26 +320,24 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             <!--Top left image-->
             <picture class="cs-picture cs-picture1">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/us2.jpg">
+                <source media="(max-width: 600px)" srcset="/assets/images/front.jpg">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/us2.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/us2.jpg" alt="wedding photoshoot" width="297" height="366" style="border-radius: 8px;">
+                <source media="(min-width: 601px)" srcset="/assets/images/front.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/front.jpg" alt="wedding photoshoot" width="297" height="366" style="border-radius: 8px;">
             </picture>
             <!--Bottom right image-->
             <picture class="cs-picture cs-picture2">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/us.jpg">
+                <source media="(max-width: 600px)" srcset="/assets/images/generator.jpg">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/us.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/us.jpg" alt="photograph of a woman" width="405" height="376" style="border-radius: 8px;">
+                <source media="(min-width: 601px)" srcset="/assets/images/generator.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/generator.jpg" alt="photograph of a woman" width="405" height="376" style="border-radius: 8px;">
             </picture>
             <!--Middle image-->
             <picture class="cs-picture cs-picture3">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/plumber_boy_wave.png">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/plumber_boy_wave.png">
-                <img loading="lazy" decoding="async" src="/assets/images/plumber_boy_wave.png" alt="children's birthday" width="218" height="155">
+                <source media="(max-width: 600px)" srcset="/assets/images/logo.svg">
+                <source media="(min-width: 601px)" srcset="/assets/images/logo.svg">
+                <img loading="lazy" decoding="async" src="/assets/images/logo.svg" alt="children's birthday" width="218" height="155">
             </picture>
         </div>
     </div>
@@ -253,7 +397,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 </picture>
                 <!-- <img class="cs-graphic cs-twirl" loading="lazy" decoding="async" src="/assets/images/plumber_boy_heater.png" alt="graphic" width="177" height="97" aria-hidden="true"> -->
                 <!-- <img class="cs-graphic cs-peach" loading="lazy" decoding="async" src="/assets/images/plumber_boy_heater.png" alt="graphic" width="150" height="150" aria-hidden="true"> -->
-                <img class="cs-graphic cs-blob" loading="lazy" decoding="async" src="/assets/images/plumber_boy_heater.png" alt="graphic" width="528" height="468" aria-hidden="true">
+                <!-- <img class="cs-graphic cs-blob" loading="lazy" decoding="async" src="/assets/images/plumber_boy_heater.png" alt="graphic" width="528" height="468" aria-hidden="true"> -->
                 <!-- <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="/assets/svgs/fire.svg" alt="graphic" width="175" height="143" aria-hidden="true"> -->
             </div>
         </div>
@@ -294,7 +438,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 <!-- <img class="cs-graphic cs-dots" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/lotsa-dots.svg" alt="graphic" width="179" height="225" aria-hidden="true">
                 <img class="cs-graphic cs-brown" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/brown-lines-3.svg" alt="graphic" width="179" height="225" aria-hidden="true">
                 <img class="cs-graphic cs-peach-right" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/blob-peach.svg" alt="graphic" width="56" height="42" aria-hidden="true"> -->
-                <img class="cs-graphic cs-leaf-right" loading="lazy" decoding="async" src="/assets/images/plumber_boy_sink.png" alt="graphic" width="179" height="225" aria-hidden="true">
+                <!-- <img class="cs-graphic cs-leaf-right" loading="lazy" decoding="async" src="/assets/images/plumber_boy_sink.png" alt="graphic" width="179" height="225" aria-hidden="true"> -->
             </div>
         </div>
     </section>
@@ -317,7 +461,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             <ul class="cs-card-group">
                 <!-- Review 1 -->
                 <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile-w.svg" alt="profile picture" width="80" height="80">
+                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/user.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
                     Michael always finds a way to get a technician to us quickly when we have plumbing issues. Our tech Steven quickly figured out and remediated our issue. He was extremely courteous, wearing booties around our house and ensuring that he locked the doors as he went in/out of our house as we had our small kids around. Highly recommend Stashluk!
                 </p>
@@ -331,7 +475,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 </li>
                 <!-- Review 2 -->
                 <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile-m.svg" alt="profile picture" width="80" height="80">
+                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/user.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
                     Stashluk was excellent once again. They promised to put some brainwork into a low pressure issue and it worked. Superb coordination between office (Michael) and Plumber Greg. Greg is a super young man. Polite and hard working and efficient. I give him an A+++ all around. Kudos!
                 </p>
