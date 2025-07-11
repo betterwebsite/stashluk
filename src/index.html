@@ -28,7 +28,24 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 {% endblock %}
 
 {% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Interior Page</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+                                
 
 
 
@@ -44,7 +61,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             <p class="cs-text">
                 Plumbers, electricians, and HVAC specialists dedicated to quality service right here in Summit, NJ. Whether you need a quick repair or a full installation, our team is here to help.
             </p>
-            <a href="" class="cs-button-solid">Schedule a Service</a>
+            <a href="" class="cs-button-solid">Call Now</a>
         </div>
         <div class="cs-image-group" style="overflow: hidden;">
             <!-- <span class="cs-tagline"><img class="cs-graphic" aria-hidden="true" decoding="async" src="/assets/images/slashes.svg" alt="stripes graphic" width="1290" height="684" style="height: 54px;position: absolute;left: 0%;top: -0.5%;background-color: #d42c24;"></span> -->
